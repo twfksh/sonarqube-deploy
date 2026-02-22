@@ -34,8 +34,8 @@ curl -fsSL https://raw.githubusercontent.com/twfksh/sonarqube-deploy/master/setu
 ## Manual Installation
 
 ```bash
-git clone https://github.com/USERNAME/REPO.git
-cd REPO
+git clone https://github.com/twfksh/sonarqube-deploy.git
+cd sonarqube-deploy
 sudo ./setup.sh [version]
 ```
 
