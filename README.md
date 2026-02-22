@@ -28,8 +28,10 @@ curl -fsSL https://raw.githubusercontent.com/twfksh/sonarqube-installer/master/s
 
 - Linux system with systemd
 - Root/sudo access
-- Java installed at `/usr/local/java`
-- wget and unzip
+- Java installed at `/usr/lib/jvm/default`
+- `wget` and `unzip`
+
+**Note**: Make sure that the `/usr/lib/jvm/default` points to the required `jvm` version.
 
 ## Manual Installation
 

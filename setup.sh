@@ -42,7 +42,7 @@ User=sonarqube
 Group=sonarqube
 PIDFile=/opt/sonarqube/bin/SonarQube.pid
 
-Environment=JAVA_HOME=/usr/local/java
+Environment=JAVA_HOME=/usr/lib/jvm/default
 WorkingDirectory=/opt/sonarqube 
 ExecStart=/opt/sonarqube/bin/sonar.sh start 
 ExecStop=/opt/sonarqube/bin/sonar.sh stop 
