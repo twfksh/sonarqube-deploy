@@ -7,13 +7,13 @@ Automated installation script for SonarQube on Linux systems.
 Run the following command to install SonarQube:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/twfksh/sonarqube-deploy/master/setup.sh | sudo bash
+curl -fsSL https://raw.githubusercontent.com/twfksh/sonarqube-installer/master/setup.sh | sudo bash
 ```
 
 Or with a specific version:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/twfksh/sonarqube-deploy/master/setup.sh | sudo bash -s 9.9.8.100196
+curl -fsSL https://raw.githubusercontent.com/twfksh/sonarqube-installer/master/setup.sh | sudo bash -s 9.9.8.100196
 ```
 
 ## What it does
@@ -34,8 +34,8 @@ curl -fsSL https://raw.githubusercontent.com/twfksh/sonarqube-deploy/master/setu
 ## Manual Installation
 
 ```bash
-git clone https://github.com/twfksh/sonarqube-deploy.git
-cd sonarqube-deploy
+git clone https://github.com/twfksh/sonarqube-installer.git
+cd sonarqube-installer
 sudo ./setup.sh [version]
 ```
 
