@@ -49,7 +49,7 @@ sudo mkdir -p $SONARQUBE_SRC_DIR/temp $SONARQUBE_SRC_DIR/logs
 sudo chown -R sonarqube:sonarqube $SONARQUBE_SRC_DIR/temp $SONARQUBE_SRC_DIR/logs
 
 # Configure sonar.properties for PostgreSQL
-SONAR_PROPERTIES="$SONARQUBE_SRC_DIR/conf/sonar.properties"
+SONAR_PROPERTIES="$SONARQUBE_SRC_DIR/$TEMP_DIR/conf/sonar.properties"
 
 echo "Configuring SonarQube to use PostgreSQL..."
 sed -i "s/#sonar.jdbc.username=/sonar.jdbc.username=$POSTGRES_USER/" $SONAR_PROPERTIES
