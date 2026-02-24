@@ -54,7 +54,7 @@ SONAR_PROPERTIES="$SONARQUBE_SRC_DIR/$TEMP_DIR/conf/sonar.properties"
 echo "Configuring SonarQube to use PostgreSQL..."
 sed -i "s/#sonar.jdbc.username=/sonar.jdbc.username=$POSTGRES_USER/" $SONAR_PROPERTIES
 sed -i "s/#sonar.jdbc.password=/sonar.jdbc.password=$POSTGRES_PASSWORD/" $SONAR_PROPERTIES
-sed -i "s|#sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube|sonar.jdbc.url=jdbc:postgresql://127.0.0.1:5432/$POSTGRES_DB|" $SONAR_PROPERTIES
+sed -i "s|#sonar.jdbc.url=jdbc:postgresql://localhost/sonarqube|sonar.jdbc.url=jdbc:postgresql://127.0.0.1:5432/$POSTGRES_DB?currentSchema=public|" $SONAR_PROPERTIES
 
 # Generate sonarqube.service unit file
 cat <<EOF > /etc/systemd/system/sonarqube.service
